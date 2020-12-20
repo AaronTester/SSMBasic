@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <import resource="spring-dao.xml" />
+    <import resource="spring-service.xml"/>
+
+    <!--自动扫描包-->
+    <context:component-scan base-package="com.aaron.controller"/>
+    <!--开启转发-->
+    <mvc:default-servlet-handler/>
+    <!--注解驱动-->
+    <mvc:annotation-driven />
+    <!--视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/page/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- 限制文件上传总大小，不设置默认没有限制，单位为字节 200*1024*1024即200M -->
+        <property name="maxUploadSize" value="209715200" />
+        <!-- 设置每个上传文件的大小上限 -->
+        <property name="maxUploadSizePerFile" value="1048576"/>
+        <!-- 处理文件名中文乱码 -->
+        <property name="defaultEncoding" value="UTF-8" />
+        <!-- resolveLazily属性启用是为了推迟文件解析，以便捕获文件大小异常 -->
+        <property name="resolveLazily" value="true" />
+    </bean>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.aaron.config.MyInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+</beans>

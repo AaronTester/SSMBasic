@@ -1,0 +1,16 @@
+
+V
+java:S4719="9Replace charset name argument with StandardCharsets.UTF_8(Ñ ¼¼8Ô¢ò»ã.
+d
+java:S44888"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(‡” ,8Ô¢ò»ã.
+U
+java:S1874&"3Remove this use of "getRealPath"; it is deprecated.(Å †‰þÿÿÿÿ8£²Í»ã.
+v
+java:S2293A"YReplace the type specification in this constructor call with the diamond operator ("<>").(‘å¹ó8Ô¢ò»ã.
+[
+java:S4719=">Replace charset name argument with StandardCharsets.ISO_8859_1(Ñ ¼¼8Ô¢ò»ã.
+l
+java:S4488!"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ÁîÒÅùÿÿÿÿ8’ˆº»ã.
+X	java:S125,"<This block of commented-out lines of code should be removed.(Öô¥ï8È¦Ã»ã.
+P
+java:S1874:"3Remove this use of "getRealPath"; it is deprecated.(½ÕÎÿ8¢Êò»ã.

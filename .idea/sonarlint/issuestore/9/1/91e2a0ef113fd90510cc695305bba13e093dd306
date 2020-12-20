@@ -1,0 +1,12 @@
+
+F	Web:S5256^"%Add "<th>" headers to this "<table>".(¿‰˜ÿÿÿÿÿ8¡ˆ³»ã.
+s Web:TableHeaderHasIdOrScopeCheckC";Add either an 'id' or a 'scope' attribute to this <th> tag.(¢’ú´ûÿÿÿÿ8È‰†¯ã.
+TWeb:TableWithoutCaptionCheck^" Add a description to this table.(¿‰˜ÿÿÿÿÿ8¡ˆ³»ã.
+cWeb:DoctypePresenceCheck":Insert a <!DOCTYPE> declaration to before this <html> tag.(œ÷Ãûÿÿÿÿ
+m Web:TableHeaderHasIdOrScopeCheckB";Add either an 'id' or a 'scope' attribute to this <th> tag.(ØØ…
+8È‰†¯ã.
+s Web:TableHeaderHasIdOrScopeCheckF";Add either an 'id' or a 'scope' attribute to this <th> tag.(ıÀ¶Ûûÿÿÿÿ8È‰†¯ã.
+Z	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ
+n Web:TableHeaderHasIdOrScopeCheckD";Add either an 'id' or a 'scope' attribute to this <th> tag.(šâá8È‰†¯ã.
+s Web:TableHeaderHasIdOrScopeCheckE";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ÿõ–Âıÿÿÿÿ8È‰†¯ã.
+OWeb:TableWithoutCaptionCheck?" Add a description to this table.(ãÿ‘8È‰†¯ã.

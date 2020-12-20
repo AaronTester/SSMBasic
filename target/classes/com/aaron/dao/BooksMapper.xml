@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aaron.dao.BooksMapper">
+   
+    <insert id="addBooks" parameterType="Books">
+        insert into Books(bookName,bookCounts,detail)
+        values(#{bookName},#{bookCounts},#{detail});
+    </insert>
+
+    <delete id="deleteBooks" parameterType="int">
+        delete from Books where bookID = #{bookId}
+    </delete>
+    <update id="updateBooks" parameterType="Books">
+        update Books
+            set bookName = #{bookName},
+            bookCounts  = #{bookCounts},
+            detail = #{detail}
+            where bookID = #{bookId}
+    </update>
+
+    <select id="queryBooksById" parameterType="int" resultType="Books">
+        select * from Books where bookID = #{bookId}
+    </select>
+
+    <select id="queryBooksList" resultType="Books">
+        select * from Books
+    </select>
+
+    <select id="queryBooksByName" resultType="Books">
+        select * from Books where bookName = #{bookName}
+    </select>
+</mapper>
