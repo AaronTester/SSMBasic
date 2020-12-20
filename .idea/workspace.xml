@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e34df469-9c42-4cc8-a803-4bb061eb458b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/aaron/pojo/User.java" afterDir="false" />
-    </list>
+    <list default="true" id="e34df469-9c42-4cc8-a803-4bb061eb458b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -255,6 +253,7 @@
       <workItem from="1607221343265" duration="22276000" />
       <workItem from="1607565115570" duration="122000" />
       <workItem from="1607565412854" duration="970000" />
+      <workItem from="1608438135601" duration="859000" />
     </task>
     <servers />
   </component>
